@@ -7,5 +7,9 @@
     "sass": "sass --watch ./sass/main.scss:./public/css/styles.css"
   },
   "author": "PB",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.9"
 }
+}
+
