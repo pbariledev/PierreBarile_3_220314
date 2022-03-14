@@ -1,0 +1,11 @@
+{
+  "name": "p3_barile_pierre",
+  "version": "1.0.0",
+  "description": "P3 Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css"
+  },
+  "author": "PB",
+  "license": "ISC"
+}
