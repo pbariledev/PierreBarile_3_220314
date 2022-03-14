@@ -1,14 +1,32 @@
-@charset "UTF-8";
-/*ordre inmport Utils/Vendors/Base/Layout/Component/Pages/themes*/
-/*fichier avec des styles basiques*/
-/*fichier avec les fonts*/
-/*fichier avec les styles de typographie de base pour copier du texte*/
-/*fichier avec les assistances type .container*/
-/*styles liés à l'en-tête du site*/
-/*styles liés au pied de page du site*/
-/*styles liés au composant de bouton*/
-/*si styles spécifique pour la page d'acceuil*/
-/*@import
-  'themes/default';*/
+/* box-sizing =================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: none;
+  width: 100%;
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.input-icone {
+  position: relative;
+  width: 100%;
+  background-color: #eaeaea;
+}
+
+#city {
+  padding-left: 15px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.input-icone i {
+  position: absolute;
+}
 
 /*# sourceMappingURL=styles.css.map */

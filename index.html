@@ -10,7 +10,7 @@
     <!--lien vers la police externe (mettre url)-->
     <link rel="stylesheet" href="https://*" />
     <!--lien vers la feuille de style-->
-    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/styles.css" />
     <!--lien vers la feuille de style TABLETTE-->
     <link
       rel="stylesheet"
@@ -20,14 +20,34 @@
     <!--lien vers la feuille de style MOBILE-->
     <link rel="stylesheet" media="screen and (max-width:768px)" href="*" />
     <!--lien vers la feuille de icone-->
-    <script src="https://*" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/bdc83bbed0.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Ohmyfood</title>
   </head>
   <body>
     <!--div de l'ensemble de la page-->
     <header>
-      <img src="./images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+      <div class="logo">
+        <img src="./images/logo/ohmyfood.png" alt="logo Ohmyfood" />
+      </div>
     </header>
+    <section id="under_header">
+      <form class="location">
+        <div class="input-icone">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <input type="search" placeholder="Paris, Belleville" id="city" />
+        </div>
+        <div id="slogan">
+          <h1>Réservez le menu qui vous convient</h1>
+          <h2>
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </h2>
+        </div>
+        <button class="explor">Explorer nos restaurants</button>
+      </form>
+    </section>
   </body>
 </html>

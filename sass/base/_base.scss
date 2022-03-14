@@ -1,1 +1,27 @@
-/*fichier avec des styles basiques*/
+/* box-sizing =================================================================*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: none;
+  width: 100%;
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.input-icone {
+  position: relative;
+  width: 100%;
+  background-color: rgb(234, 234, 234);
+}
+#city {
+  padding-left: 15px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+.input-icone i {
+  position: absolute;
+}
