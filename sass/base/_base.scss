@@ -1,27 +1,28 @@
-/* box-sizing =================================================================*/
-* {
-  box-sizing: border-box;
-}
+//under_header
+#under_header {
+  background-color: $colorBackgroundBody;
+  box-shadow: -1px 2px 10px 3px
+    darken($color: $colorBackgroundLocation, $amount: 20%);
 
-body {
-  background: none;
   width: 100%;
-  padding-top: 20px;
-  margin: auto;
-  text-align: center;
+  padding: 0;
+  @media (max-width: $bpMobil) {
+    border: none;
+    padding: 0 0 3.5em 0;
+    box-shadow: none;
+  }
 }
+#button {
+  width: 100%;
+}
+#button div {
+  display: flex;
+  margin: 1em;
 
-.input-icone {
-  position: relative;
-  width: 100%;
-  background-color: rgb(234, 234, 234);
+  @media (max-width: $bpMobil) {
+    flex-direction: column;
+  }
 }
-#city {
-  padding-left: 15px;
-  text-align: center;
-  border: none;
-  background-color: transparent;
-}
-.input-icone i {
-  position: absolute;
+.buttonFonctionnement {
+  margin: 0.9em;
 }

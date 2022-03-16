@@ -1,0 +1,18 @@
+//under_header
+.location,
+#search-location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.location {
+  @media (max-width: $bpMobil) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#slogan {
+  @media (max-width: $bpMobil) {
+    margin: 1.8em 2em 1.8em 2em;
+  }
+}

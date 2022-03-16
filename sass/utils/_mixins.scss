@@ -1,0 +1,10 @@
+@mixin dimensionButtonLocation {
+  height: $h-buttonLocation;
+  width: $w-buttonLocation;
+}
+@mixin dimensionButtonLocationMobil {
+  @media (max-width: $bpMobil) {
+    height: $h-buttonLocationMobil;
+    width: $w-buttonLocationMobil;
+  }
+}
