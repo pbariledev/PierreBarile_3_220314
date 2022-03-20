@@ -20,7 +20,7 @@
     padding-left: 0em;
   }
 }
-#city {
+input {
   border: none;
   background-color: transparent;
   height: 3em;
@@ -32,7 +32,7 @@
     width: 10em;
   }
 }
-.explor {
+#under_header button {
   background: linear-gradient(
     to bottom right,
     $color-secondary,
@@ -53,7 +53,7 @@
     height: 3em;
   }
 }
-.buttonFonctionnement {
+#button button {
   height: 5em;
   border: none;
   border-radius: 1.5em;
@@ -62,7 +62,7 @@
   align-items: center;
   max-width: 25em;
 }
-.num {
+#button h4 {
   color: white;
   background-color: $color-primary;
   width: 2em;
@@ -71,4 +71,17 @@
   border-radius: 1em;
   position: relative;
   left: -1.4em;
+}
+#restaurant article {
+  width: 21em;
+  background-color: white;
+  box-shadow: 0px 5px 5px darken($color: white, $amount: 10%);
+  border-radius: 20px;
+  margin: 1em;
+}
+#restaurant img {
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
 }

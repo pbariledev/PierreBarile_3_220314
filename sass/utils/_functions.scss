@@ -1,0 +1,7 @@
+@function colorText($colour) {
+  @if (color(background-color), white) {
+    @return color(color, black);
+  } @else {
+    @return color(color, white);
+  }
+}

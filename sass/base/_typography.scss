@@ -7,11 +7,12 @@ h2 {
 }
 h1,
 h2,
-h3 {
+h3,
+h4,
+p {
   font-family: 'Roboto', sans-serif, sans-serif;
 }
-h1,
-h3 {
+h1 {
   font-weight: bold;
   font-size: 2rem;
   @media (max-width: $bpMobil) {
@@ -24,15 +25,47 @@ h2 {
   font-size: 1.1rem;
 }
 h3 {
-  margin: 1em 0 0 0.5em;
+  margin-left: 0.5em;
   padding-left: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  @media (max-width: $bpMobil) {
+    font-size: 1.4rem;
+  }
 }
-.icoImg {
+#button i {
   font-size: 1.5em;
   color: gray;
 }
-.filter_txt {
+#button span {
   margin: 1.5em;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+h4 {
+  margin: 0 0 0.2em 0;
+  font-size: 1.1em;
+}
+#restaurant i {
+  font-size: 1.5em;
+}
+footer ul,
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+#restaurant a {
+  color: black;
+}
+li > a {
+  color: white;
+  margin: 0.5em 0 0.5em 0;
+}
+li {
+  margin: 0.6em 0 0.6em 0;
 }
