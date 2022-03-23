@@ -8,17 +8,7 @@
     <link rel="icon" href="./images/logo/ohmyfood@2x.svg" />
     <!-- lien vers les feuilles de styles-->
     <!--lien vers la police externe (mettre url)-->
-    <link rel="stylesheet" href="https://*" />
-    <!--lien vers la feuille de style-->
     <link rel="stylesheet" href="./public/css/styles.css" />
-    <!--lien vers la feuille de style TABLETTE-->
-    <link
-      rel="stylesheet"
-      media="screen and (min-width:769px) and (max-width:992px)"
-      href="*"
-    />
-    <!--lien vers la feuille de style MOBILE-->
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="*" />
     <!--lien vers la feuille de icone-->
     <script
       src="https://kit.fontawesome.com/bdc83bbed0.js"
@@ -35,26 +25,244 @@
         <img src="./images/logo/ohmyfood.png" alt="logo Ohmyfood" />
       </div>
     </header>
+    <section id="menu">
+      <img
+        class="menu-image"
+        src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="a la francaise"
+      />
+      <div class="carte">
+        <div class="carte--titre">
+          <h5 class="carte--titre__title">A la française</h5>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <ul class="carte--liste">
+          <li>
+            <h6>entrées</h6>
+            <hr />
+            <div class="choise">
+              <input id="checkbox--case__e1" class="checkbox" type="checkbox" />
+              <label for="checkbox--case__e1">
+                <div class="choise--case">
+                  <div class="choise--plate">
+                    <p class="choise--plate__titre">
+                      Tartare de poulpe acidulé
+                    </p>
+                    <p>Aux zests d'orange</p>
+                  </div>
+                  <div class="choise--check">
+                    <p class="choise--check__price">
+                      <br />
+                      25€
+                    </p>
+                    <p class="choise--check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </p>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="choise">
+              <input id="checkbox--case__e2" class="checkbox" type="checkbox" />
+              <label for="checkbox--case__e2">
+                <div class="choise--case">
+                  <div class="choise--plate">
+                    <p class="choise--plate__titre">
+                      Velouté de légumes d'antan
+                    </p>
+                    <p>Carotte, panais, topinambour</p>
+                  </div>
+                  <div class="choise--check">
+                    <p class="choise--check__price">
+                      <br />
+                      35€
+                    </p>
+                    <p class="choise--check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </p>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="choise">
+              <input id="checkbox--case__e3" class="checkbox" type="checkbox" />
+              <label for="checkbox--case__e3">
+                <div class="choise--case">
+                  <div class="choise--plate">
+                    <p class="choise--plate__titre">Soupe à l'oignon</p>
+                    <p>Revisitée</p>
+                  </div>
+                  <div class="choise--check">
+                    <p class="choise--check__price">
+                      <br />
+                      20€
+                    </p>
+                    <p class="choise--check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </p>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </li>
+          <li>
+            <h6>plats</h6>
+            <hr />
+            <div class="choise">
+              <input id="checkbox--case__p1" class="checkbox" type="checkbox" />
+              <label for="checkbox--case__p1">
+                <div class="choise--case">
+                  <div class="choise--plate">
+                    <p class="choise--plate__titre">Coquilles Saint-Jacques</p>
+                    <p>Accompagnées d'une purée de panais</p>
+                  </div>
+                  <div class="choise--check">
+                    <p class="choise--check__price">
+                      <br />
+                      40€
+                    </p>
+                    <p class="choise--check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </p>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="choise">
+              <input id="checkbox--case__p2" class="checkbox" type="checkbox" />
+              <label for="checkbox--case__p2">
+                <div class="choise--case">
+                  <div class="choise--plate">
+                    <p class="choise--plate__titre">Magret de canard</p>
+                    <p>Et parmentier de pommes de terre</p>
+                  </div>
+                  <div class="choise--check">
+                    <p class="choise--check__price">
+                      <br />
+                      35€
+                    </p>
+                    <p class="choise--check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </p>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="choise">
+              <input id="checkbox--case__p3" class="checkbox" type="checkbox" />
+              <label for="checkbox--case__p3">
+                <div class="choise--case">
+                  <div class="choise--plate">
+                    <p class="choise--plate__titre">
+                      Pigeonneau d’Ille-et-Vilaine
+                    </p>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                  </div>
+                  <div class="choise--check">
+                    <p class="choise--check__price">
+                      <br />
+                      44€
+                    </p>
+                    <p class="choise--check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </p>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </li>
+          <li>
+            <h6>desserts</h6>
+            <hr />
+            <div class="choise">
+              <input id="checkbox--case__d1" class="checkbox" type="checkbox" />
+              <label for="checkbox--case__d1">
+                <div class="choise--case">
+                  <div class="choise--plate">
+                    <p class="choise--plate__titre">
+                      Pétales de violettes glacés
+                    </p>
+                    <p>Et purée de noisettes</p>
+                  </div>
+                  <div class="choise--check">
+                    <p class="choise--check__price">
+                      <br />
+                      18€
+                    </p>
+                    <p class="choise--check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </p>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="choise">
+              <input id="checkbox--case__d2" class="checkbox" type="checkbox" />
+              <label for="checkbox--case__d2">
+                <div class="choise--case">
+                  <div class="choise--plate">
+                    <p class="choise--plate__titre">Fondant au chocolat</p>
+                    <p>Revisité</p>
+                  </div>
+                  <div class="choise--check">
+                    <p class="choise--check__price">
+                      <br />
+                      22€
+                    </p>
+                    <p class="choise--check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </p>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="choise">
+              <input id="checkbox--case__d3" class="checkbox" type="checkbox" />
+              <label for="checkbox--case__d3">
+                <div class="choise--case">
+                  <div class="choise--plate">
+                    <p class="choise--plate__titre">
+                      Millefeuille croustillant
+                    </p>
+                    <p>Myrtilles et pâte d’amande</p>
+                  </div>
+                  <div class="choise--check">
+                    <p class="choise--check__price">
+                      <br />
+                      23€
+                    </p>
+                    <p class="choise--check__icon">
+                      <i class="fa-solid fa-check"></i>
+                    </p>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </li>
+        </ul>
+        <button class="validation">commander</button>
+      </div>
+    </section>
+    <footer>
+      <article>
+        <ul>
+          <li>
+            <h5>ohmyfood</h5>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-handshake-angle"></i>Devenir parteanire</a
+            >
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:pbarilepro@gmail.com">Contact</a></li>
+        </ul>
+      </article>
+    </footer>
   </body>
-  <footer>
-    <article>
-      <ul>
-        <li>
-          <h5>ohmyfood</h5>
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-solid fa-handshake-angle"></i>Devenir parteanire</a
-          >
-        </li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="mailto:pbarilepro@gmail.com">Contact</a></li>
-      </ul>
-    </article>
-  </footer>
 </html>

@@ -11,14 +11,6 @@
     <link rel="stylesheet" href="https://*" />
     <!--lien vers la feuille de style-->
     <link rel="stylesheet" href="./public/css/styles.css" />
-    <!--lien vers la feuille de style TABLETTE-->
-    <link
-      rel="stylesheet"
-      media="screen and (min-width:769px) and (max-width:992px)"
-      href="*"
-    />
-    <!--lien vers la feuille de style MOBILE-->
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="*" />
     <!--lien vers la feuille de icone-->
     <script
       src="https://kit.fontawesome.com/bdc83bbed0.js"
@@ -28,7 +20,6 @@
     <title>Ohmyfood</title>
   </head>
   <body>
-    <!--div de l'ensemble de la page-->
     <header>
       <div>
         <img src="./images/logo/ohmyfood.png" alt="logo Ohmyfood" />
@@ -46,10 +37,10 @@
             Découvrez des restaurants d'exception, sélectionnés par nos soins.
           </h2>
         </div>
-        <button>Explorer nos restaurants</button>
+        <button class="validation">Explorer nos restaurants</button>
       </form>
     </section>
-    <section id="button">
+    <section id="fonctionnement">
       <h3>Fonctionnement</h3>
       <div>
         <button s>
@@ -71,87 +62,87 @@
     </section>
     <section id="restaurant">
       <h3>Restaurants</h3>
-      <div id="bodyCard">
-        <article>
+      <div class="restaurant-liste">
+        <article class="restaurant-unit">
           <a href="./MenuLaPalette.html">
-            <figure>
+            <figure class="restaurant-unit__photo">
               <!-- Image de la carte -->
               <p>Nouveau</p>
               <img
                 src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="la palette du gout"
               />
-              <figcaption>
+              <figcaption class="restaurant-titre">
                 <!-- Corp de notre carte -->
                 <div>
                   <!-- Titre de l'article -->
                   <h4>La palette du goût</h4>
                   <p>Ménilmontant</p>
                 </div>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
               </figcaption>
             </figure>
           </a>
         </article>
-        <article>
+        <article class="restaurant-unit">
           <a href="./MenuLaNote.html">
-            <figure>
+            <figure class="restaurant-unit__photo">
               <!-- Image de la carte -->
               <img
                 src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                 alt="La note enchantée"
               />
               <p>Nouveau</p>
-              <figcaption>
+              <figcaption class="restaurant-titre">
                 <!-- Corp de notre carte -->
                 <div>
                   <!-- Titre de l'article -->
                   <h4>La note enchantée</h4>
                   <p>Charonne</p>
                 </div>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
               </figcaption>
             </figure>
           </a>
         </article>
-        <article>
+        <article class="restaurant-unit">
           <a href="./MenuALaFr.html">
-            <figure>
+            <figure class="restaurant-unit__photo">
               <!-- Image de la carte -->
               <img
                 src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                 alt="A la française"
               />
               <p>Nouveau</p>
-              <figcaption>
+              <figcaption class="restaurant-titre">
                 <!-- Corp de notre carte -->
                 <div>
                   <!-- Titre de l'article -->
                   <h4>A la française</h4>
                   <p>Cité Rouge</p>
                 </div>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
               </figcaption>
             </figure>
           </a>
         </article>
-        <article>
+        <article class="restaurant-unit">
           <a href="./MenuLeDelice.html">
-            <figure>
+            <figure class="restaurant-unit__photo">
               <!-- Image de la carte -->
               <img
                 src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="Le délice des sens"
               />
               <p>Nouveau</p>
-              <figcaption>
+              <figcaption class="restaurant-titre">
                 <!-- Corp de notre carte -->
                 <div>
                   <!-- Titre de l'article -->
                   <h4>Le délice des sens</h4>
                   <p>Cité Rouge</p>
                 </div>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
               </figcaption>
             </figure>
           </a>

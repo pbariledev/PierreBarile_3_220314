@@ -2,20 +2,21 @@ header {
   position: relative;
   width: 100%;
   padding: 1em 0em 0.5em 0em;
-}
-header > a {
-  position: absolute;
-  font-size: larger;
-  vertical-align: middle;
-  left: 1em;
-  top: 1em;
-}
-header div {
-  text-align: center;
-}
-header img {
-  width: 18em;
-  @media (max-width: $bpMobil) {
-    width: 10em;
+
+  & > a {
+    position: absolute;
+    font-size: larger;
+    vertical-align: middle;
+    left: 1em;
+    top: 1em;
+  }
+  & div {
+    text-align: center;
+  }
+  & img {
+    width: 18em;
+    @media (max-width: $bpMobil) {
+      width: 10em;
+    }
   }
 }

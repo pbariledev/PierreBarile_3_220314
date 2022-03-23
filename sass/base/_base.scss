@@ -1,61 +1,121 @@
 //under_header
 #under_header {
   background-color: $colorBackgroundBody;
-  box-shadow: -1px 2px 10px 3px
-    darken($color: $colorBackgroundLocation, $amount: 20%);
-
   width: 100%;
-  padding: 0;
-  @media (max-width: $bpMobil) {
+  padding: 0 0 3.5em 0;
+  @media (min-width: $bpMobil) {
+    padding: 0;
     border: none;
-    padding: 0 0 3.5em 0;
-    box-shadow: none;
-  }
-}
-#button,
-#restaurant {
-  width: 100%;
-  margin: 2em 0 0 0;
-}
-#button div {
-  display: flex;
-  margin: 1em;
-  @media (max-width: $bpMobil) {
-    flex-direction: column;
+    box-shadow: -1px 2px 10px 3px
+      darken($color: $colorBackgroundLocation, $amount: 20%);
   }
 }
 section div > button {
   margin: 0.9em;
 }
+
+#fonctionnement,
+#restaurant {
+  width: 100%;
+  margin: 2em 0 0 0;
+}
+#fonctionnement {
+  & div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    @media (min-width: $bpMobil) {
+      flex-direction: row;
+    }
+  }
+}
 #restaurant {
   width: 100%;
   background-color: $colorBackgroundBody;
   padding-top: 2em;
+  @media all and (min-width: $bpMobil) and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .restaurant {
+    &-liste {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      @media all and (min-width: $bpMobil) and (max-width: 992px) {
+        justify-content: center;
+      }
+    }
+    &-unit__photo {
+      margin: 0px;
+      position: relative;
+      & > p {
+        position: absolute;
+        background-color: $color-tertiary;
+        top: 1em;
+        right: 1em;
+        line-height: 1.8em;
+        font-size: 0.9em;
+        font-weight: bold;
+        text-align: center;
+        width: 5.5em;
+        color: darken($color: $color-tertiary, $amount: 30%);
+      }
+    }
+    &-titre {
+      display: flex;
+      padding: 1em 1em 1em 1em;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 }
-figure {
-  margin: 0px;
+#menu {
+  width: 100%;
+  @media all and (min-width: $bpMobil) and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu {
+    &-image {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      @media all and (min-width: $bpMobil) and (max-width: 992px) {
+        border-radius: 3em;
+      }
+    }
+  }
+}
+.carte {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 6em 1em;
+  border-radius: 40px 40px 0 0;
+  bottom: 3em;
+  background-color: $colorBackgroundBody;
   position: relative;
+  z-index: 10;
+  margin: -2em 0 -4em 0;
+  width: 100%;
+  &--titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      margin: 0;
+      padding-top: 0.8em;
+    }
+  }
 }
-figure > p {
-  position: absolute;
+hr {
+  border: 0;
   background-color: $color-tertiary;
-  top: 1em;
-  right: 1em;
-  line-height: 1.8em;
-  font-size: 0.9em;
-  font-weight: bold;
-  text-align: center;
-  width: 5.5em;
-  color: darken($color: $color-tertiary, $amount: 30%);
-}
-figcaption {
-  display: flex;
-  padding: 1em 1em 1em 1em;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#restaurant > div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  height: 3px;
+  width: 2.6em;
+  margin: 0;
 }

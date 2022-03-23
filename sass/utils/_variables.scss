@@ -4,6 +4,7 @@ $bpMobil: 768px;
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
+$degrad: linear-gradient(to bottom right, $color-secondary, $color-primary);
 
 $color-buton: rgb(246, 246, 246);
 $color-buton-hover: rgb(245, 237, 255);
@@ -11,6 +12,11 @@ $color-buton-hover: rgb(245, 237, 255);
 $colorBackgroundBody: rgb(246, 246, 246);
 $colorBackgroundFooter: rgb(53, 53, 53);
 $colorBackgroundLocation: rgb(234, 234, 234);
+$colorBackgroundvalidation: linear-gradient(
+  to bottom right,
+  $color-secondary,
+  $color-primary
+);
 
 //dimension des bouttons
 $w-buttonLocation: 20em;

@@ -6,13 +6,92 @@
   justify-content: space-between;
 }
 #under_header form {
-  @media (max-width: $bpMobil) {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $bpMobil) {
+    flex-direction: row;
   }
 }
 #slogan {
-  @media (max-width: $bpMobil) {
-    margin: 1.8em 2em 1.8em 2em;
+  margin: 1.8em 2em 1.8em 2em;
+}
+
+//-----------------------------------------------------------
+.checkbox {
+  position: absolute;
+  display: none;
+}
+.choise {
+  height: 4em;
+  width: 100%;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 0px 6px 10px
+    darken($color: $colorBackgroundLocation, $amount: 10%);
+  &--case {
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 0 0;
+    &:hover .choise--check__price {
+      transform: translate(0em);
+      & + .choise--check__price {
+        display: flex;
+      }
+    }
   }
+  &--plate {
+    margin-left: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    &__titre {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 0.2em;
+    }
+  }
+  &--check {
+    display: flex;
+    align-items: center;
+    &__price {
+      padding: 0.8em;
+      width: 4.1em;
+      border-radius: 0 1em 1em 0;
+      font-weight: bold;
+      background-color: white;
+      transform: translate(4em);
+      transition-property: transform;
+      transition-duration: 1000ms;
+    }
+    &__icon {
+      height: 4em;
+      width: 4em;
+      background-color: $color-tertiary;
+      border-radius: 0 1em 1em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .fa-check {
+        color: white;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 1em;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+input:checked + label .fa-check {
+  color: $color-tertiary;
+}
+input:checked + label .choise--check__price {
+  transform: translate(0em);
+}
+.choise--case:hover {
+  cursor: pointer;
 }
