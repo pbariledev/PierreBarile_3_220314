@@ -40,9 +40,8 @@ input {
   margin: auto;
   color: white;
   font-size: 0.98em;
-  width: 14em;
+  padding: 0 2em;
   height: 3em;
-  @include dimensionButtonLocation;
   border: none;
   border-radius: 2em;
   box-shadow: 0px 10px 10px
@@ -59,12 +58,19 @@ input {
 
 #fonctionnement button {
   height: 5em;
+  background-color: $color-buton;
   border: none;
   border-radius: 1.5em;
   box-shadow: 0px 10px 10px darken($color: white, $amount: 10%);
   display: flex;
   align-items: center;
   max-width: 25em;
+  &:hover {
+    background-color: $color-buton-hover;
+    i {
+      color: $color-primary;
+    }
+  }
   & h4 {
     color: white;
     background-color: $color-primary;
@@ -76,6 +82,7 @@ input {
     left: -1.4em;
   }
 }
+
 #restaurant article {
   width: 89%;
   background-color: white;

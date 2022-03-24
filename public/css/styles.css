@@ -1,5 +1,13 @@
-/* box-sizing =================================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* box-sizing =================================================================*/
 * {
   box-sizing: border-box;
 }
@@ -117,55 +125,54 @@ section div > button {
   justify-content: space-between;
 }
 
-#menu {
+.imagePage {
+  max-width: 100%;
+  max-height: 32rem;
   width: 100%;
-}
-@media all and (min-width: 768px) and (max-width: 992px) {
-  #menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-#menu .menu-image {
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
-@media all and (min-width: 768px) and (max-width: 992px) {
-  #menu .menu-image {
-    border-radius: 3em;
-  }
+  object-fit: cover;
 }
 
-.carte {
-  display: flex;
-  flex-direction: column;
-  padding: 0 1em 6em 1em;
-  border-radius: 40px 40px 0 0;
-  bottom: 3em;
-  background-color: #f6f6f6;
-  position: relative;
-  z-index: 10;
-  margin: -2em 0 -4em 0;
+.menu {
   width: 100%;
+  position: relative;
+  margin-top: -4em;
+  border-radius: 2em 2em 0 0;
+  background-color: #f6f6f6;
+  padding: 1em;
 }
-.carte--titre {
+.menu--header {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.carte--titre__title {
-  margin: 0;
-  padding-top: 0.8em;
-}
 
+@media all and (min-width: 768px) {
+  .submenus {
+    display: flex;
+    flex-direction: column;
+  }
+  .submenus__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .submenus--plate {
+    min-width: 45%;
+    margin: auto;
+  }
+}
 hr {
   border: 0;
   background-color: #99e2d0;
   height: 3px;
   width: 2.6em;
   margin: 0;
+}
+
+.validemenu {
+  display: flex;
+  margin: 3em;
 }
 
 h1,
@@ -269,15 +276,23 @@ h5 {
   color: red;
 }
 
-h6 {
+.menu--header__title {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.submenus--plate__title {
   font-size: 1em;
   font-weight: lighter;
   text-transform: uppercase;
   margin: 1.5em 0 0.3em 0;
 }
 
-.carte--liste li {
-  margin: 0.5em 0 2.5em 0;
+.item--title__master {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.item--price {
+  font-weight: bold;
 }
 
 #under_header form,
@@ -302,84 +317,73 @@ h6 {
 }
 
 .checkbox {
-  position: absolute;
   display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
 }
 
-.choise {
-  height: 4em;
-  width: 100%;
+.item {
   background-color: white;
   border-radius: 1em;
-  box-shadow: 0px 6px 10px #d1d1d1;
-}
-.choise--case {
-  height: 4em;
+  padding: 0.5em 1em;
+  margin: 1em 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 1em 0 0 0;
+  box-shadow: 0px 6px 10px #d1d1d1;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
-.choise--case:hover .choise--check__price {
+.item:hover .item--container {
   transform: translate(0em);
 }
-.choise--case:hover .choise--check__price + .choise--check__price {
+.item .item--title {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.choise--plate {
-  margin-left: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.choise--plate__titre {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 0.2em;
-}
-.choise--check {
+.item .item--container {
   display: flex;
-  align-items: center;
-}
-.choise--check__price {
-  padding: 0.8em;
-  width: 4.1em;
-  border-radius: 0 1em 1em 0;
-  font-weight: bold;
-  background-color: white;
-  transform: translate(4em);
+  justify-content: space-between;
+  height: 3em;
+  transform: translate(3.5em);
   transition-property: transform;
   transition-duration: 1000ms;
 }
-.choise--check__icon {
-  height: 4em;
-  width: 4em;
+.item .item--price {
+  width: 3.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 2.5em;
+}
+.item .item--icon {
   background-color: #99e2d0;
   border-radius: 0 1em 1em 0;
+  width: 3.5em;
+  margin: -0.5em -1em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.choise--check__icon .fa-check {
+.item .item--btn {
   color: white;
   height: 1.5em;
   width: 1.5em;
   border-radius: 1em;
   background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding-top: 0.25em;
+  cursor: pointer;
 }
 
-input:checked + label .fa-check {
+input:checked + label .item--btn {
   color: #99e2d0;
 }
-
-input:checked + label .choise--check__price {
+input:checked + label .item--container {
   transform: translate(0em);
-}
-
-.choise--case:hover {
-  cursor: pointer;
 }
 
 header {
@@ -486,10 +490,8 @@ input {
   margin: auto;
   color: white;
   font-size: 0.98em;
-  width: 14em;
+  padding: 0 2em;
   height: 3em;
-  height: 3em;
-  width: 20em;
   border: none;
   border-radius: 2em;
   box-shadow: 0px 10px 10px #d1d1d1;
@@ -507,12 +509,19 @@ input {
 
 #fonctionnement button {
   height: 5em;
+  background-color: #f6f6f6;
   border: none;
   border-radius: 1.5em;
   box-shadow: 0px 10px 10px #e6e6e6;
   display: flex;
   align-items: center;
   max-width: 25em;
+}
+#fonctionnement button:hover {
+  background-color: #f5edff;
+}
+#fonctionnement button:hover i {
+  color: #9356dc;
 }
 #fonctionnement button h4 {
   color: white;

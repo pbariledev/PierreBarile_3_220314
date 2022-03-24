@@ -86,12 +86,25 @@ h5 {
     color: red;
   }
 }
-h6 {
+
+//----------------------------------------
+.menu--header__title {
+  //h5//
+  margin: 0.5em 0 0.5em 0;
+}
+.submenus--plate__title {
+  //h6//
   font-size: 1em;
   font-weight: lighter;
   text-transform: uppercase;
   margin: 1.5em 0 0.3em 0;
 }
-.carte--liste li {
-  margin: 0.5em 0 2.5em 0;
+.item {
+  &--title__master {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  &--price {
+    font-weight: bold;
+  }
 }

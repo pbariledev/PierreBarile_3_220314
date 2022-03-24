@@ -18,80 +18,76 @@
 
 //-----------------------------------------------------------
 .checkbox {
-  position: absolute;
   display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
 }
-.choise {
-  height: 4em;
-  width: 100%;
+
+.item {
   background-color: white;
   border-radius: 1em;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
   box-shadow: 0px 6px 10px
     darken($color: $colorBackgroundLocation, $amount: 10%);
-  &--case {
-    height: 4em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em 0 0 0;
-    &:hover .choise--check__price {
-      transform: translate(0em);
-      & + .choise--check__price {
-        display: flex;
-      }
-    }
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  &:hover .item--container {
+    transform: translate(0em);
   }
-  &--plate {
-    margin-left: 1em;
-    overflow: hidden;
-    white-space: nowrap;
-    &__titre {
-      font-size: 1.1em;
-      font-weight: bold;
-      margin-bottom: 0.2em;
+
+  .item {
+    &--title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-  }
-  &--check {
-    display: flex;
-    align-items: center;
-    &__price {
-      padding: 0.8em;
-      width: 4.1em;
-      border-radius: 0 1em 1em 0;
-      font-weight: bold;
-      background-color: white;
-      transform: translate(4em);
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      height: 3em;
+      transform: translate(3.5em);
       transition-property: transform;
       transition-duration: 1000ms;
     }
-    &__icon {
-      height: 4em;
-      width: 4em;
+    &--price {
+      width: 3.5em;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-right: 2.5em;
+    }
+    &--icon {
       background-color: $color-tertiary;
       border-radius: 0 1em 1em 0;
+      width: 3.5em;
+      margin: -0.5em -1em;
       display: flex;
       align-items: center;
       justify-content: center;
-
-      .fa-check {
-        color: white;
-        height: 1.5em;
-        width: 1.5em;
-        border-radius: 1em;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    }
+    &--btn {
+      color: white;
+      height: 1.5em;
+      width: 1.5em;
+      border-radius: 1em;
+      background-color: white;
+      text-align: center;
+      padding-top: 0.25em;
+      cursor: pointer;
     }
   }
 }
-input:checked + label .fa-check {
-  color: $color-tertiary;
-}
-input:checked + label .choise--check__price {
-  transform: translate(0em);
-}
-.choise--case:hover {
-  cursor: pointer;
+input:checked + label .item {
+  &--btn {
+    color: $color-tertiary;
+  }
+  &--container {
+    transform: translate(0em);
+  }
 }
