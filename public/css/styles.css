@@ -269,11 +269,23 @@ h5 {
 }
 
 .fa-heart {
-  font-size: 1.5em;
+  font-size: 25px;
+}
+
+.relatheart {
+  position: relative;
+  color: red;
+}
+
+.absheart {
+  position: absolute;
+  right: 0;
+  transform: scale(1);
   color: grey;
 }
-.fa-heart:hover {
-  color: red;
+.absheart:hover {
+  transform: scale(0);
+  transition: transform 600ms;
 }
 
 .menu--header__title {
