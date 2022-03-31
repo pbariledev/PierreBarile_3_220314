@@ -37,6 +37,12 @@
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  animation: item $anim-item backwards;
+  @for $i from 1 through 3 {
+    &--#{$i} {
+      animation-delay: $anim-delay * $i;
+    }
+  }
   &:hover .item--container {
     transform: translate(0em);
   }
@@ -46,11 +52,29 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      &__master {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &__minor {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
     }
     &--container {
       display: flex;
       justify-content: space-between;
       height: 3em;
+      width: 5em;
+      margin-left: 1em;
       transform: translate(3.5em);
       transition-property: transform;
       transition-duration: 1000ms;
@@ -61,6 +85,12 @@
       justify-content: flex-end;
       align-items: flex-end;
       padding-right: 2.5em;
+      dl {
+        margin: 0;
+      }
+      dt {
+        display: none;
+      }
     }
     &--icon {
       background-color: $color-tertiary;

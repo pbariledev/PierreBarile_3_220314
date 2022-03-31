@@ -1,9 +1,95 @@
-h1,
-h2 {
-  margin: 0px;
-  text-align: center;
-  @media (min-width: $bpMobil) {
-    text-align: left;
+//----typo
+.relatheart {
+  position: relative;
+  color: grey;
+  font-size: 25px;
+  &:hover::before {
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hover 1s;
+  }
+}
+//----typo-index
+#under_header {
+  .title__slogan {
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    @media (min-width: 768px) {
+      padding: 0;
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  .subtitle__slogan {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0px;
+  }
+}
+.title__setion {
+  margin-left: 0.5em;
+  padding-left: 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#fonctionnement {
+  .icoImg {
+    font-size: 1.5em;
+    color: grey;
+  }
+  .title__btn__fct {
+    margin: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+
+#restaurant {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  &--name {
+    margin: 0 0 0.2em 0;
+    font-size: 1.1em;
+  }
+  &--location {
+    margin: 0;
+  }
+}
+
+.menu--header__title {
+  margin: 0.5em 0 0.5em 0;
+  font-family: 'Shrikhand';
+  font-size: 1.8em;
+  font-weight: lighter;
+  padding: 0;
+  @media (min-width: 768px) {
+    padding-left: 1em;
+  }
+}
+.submenus--plate__title {
+  font-size: 1em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 1.5em 0 0.3em 0;
+  text-align: left;
+}
+.item {
+  margin: 0;
+  &--title__master {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0;
+  }
+  &--price {
+    font-weight: bold;
   }
 }
 h1,
@@ -12,20 +98,9 @@ h3,
 h4,
 h6,
 p {
-  font-family: 'Roboto', sans-serif, sans-serif;
-}
-h1 {
-  font-weight: bold;
-  font-size: 1.4rem;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-  @media (min-width: $bpMobil) {
-    padding: 0;
-    font-size: 2rem;
-  }
-}
-h2 {
-  font-weight: lighter;
-  font-size: 1.1rem;
+  font-family: $fontfamily;
+  margin: 0;
+  padding: 0;
 }
 h3 {
   margin-left: 0.5em;
@@ -38,29 +113,10 @@ h3 {
   @media (max-width: 993) {
   }
 }
-#fonctionnement {
-  & i {
-    font-size: 1.5em;
-    color: gray;
-  }
-  & span {
-    margin: 1.5em;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-}
 p {
   margin: 0;
 }
-h4 {
-  margin: 0 0 0.2em 0;
-  font-size: 1.1em;
-}
-#restaurant {
-  & a {
-    color: black;
-  }
-}
+
 footer ul,
 li,
 a {
@@ -74,47 +130,5 @@ li {
     margin: 0.5em 0 0.5em 0;
   }
 }
-h5 {
-  font-family: 'Shrikhand';
-  font-size: 1.8em;
-  font-weight: lighter;
-}
-.fa-heart {
-  font-size: 25px;
-}
-.relatheart {
-  position: relative;
-  color: red;
-}
-.absheart {
-  position: absolute;
-  right: 0;
-  transform: scale(1);
-  color: grey;
-  &:hover {
-    transform: scale(0);
-    transition: transform 600ms;
-  }
-}
 
 //----------------------------------------
-.menu--header__title {
-  //h5//
-  margin: 0.5em 0 0.5em 0;
-}
-.submenus--plate__title {
-  //h6//
-  font-size: 1em;
-  font-weight: lighter;
-  text-transform: uppercase;
-  margin: 1.5em 0 0.3em 0;
-}
-.item {
-  &--title__master {
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-  &--price {
-    font-weight: bold;
-  }
-}

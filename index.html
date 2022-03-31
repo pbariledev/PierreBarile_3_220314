@@ -20,6 +20,10 @@
     <title>Ohmyfood</title>
   </head>
   <body>
+    <div class="section--loader">
+      <span class="loader loader__quart"></span>
+      <span class="loader__text">Chargement...</span>
+    </div>
     <header>
       <div>
         <img src="./images/logo/ohmyfood.png" alt="logo Ohmyfood" />
@@ -32,8 +36,8 @@
           <input type="search" placeholder="Paris, Belleville" id="city" />
         </div>
         <div id="slogan">
-          <h1>Réservez le menu qui vous convient</h1>
-          <h2>
+          <h1 class="title__slogan">Réservez le menu qui vous convient</h1>
+          <h2 class="subtitle__slogan">
             Découvrez des restaurants d'exception, sélectionnés par nos soins.
           </h2>
         </div>
@@ -41,47 +45,42 @@
       </form>
     </section>
     <section id="fonctionnement">
-      <h3>Fonctionnement</h3>
+      <h3 class="title__section">Fonctionnement</h3>
       <div>
         <button>
-          <h4>1</h4>
+          <h4 class="num__btn__fct">1</h4>
           <i class="fa-solid fa-mobile-screen-button icoImg"></i>
-          <span>Choisissez un restaurant</span>
+          <span class="title__btn__fct">Choisissez un restaurant</span>
         </button>
         <button>
-          <h4>2</h4>
+          <h4 class="num__btn__fct">2</h4>
           <i class="fa-solid fa-list-ul icoImg"></i>
-          <span>Composez votre menu</span>
+          <span class="title__btn__fct">Composez votre menu</span>
         </button>
         <button>
-          <h4>3</h4>
+          <h4 class="num__btn__fct">3</h4>
           <i class="fa-solid fa-store icoImg"></i>
-          <span>Dégustez au restaurant</span>
+          <span class="title__btn__fct">Dégustez au restaurant</span>
         </button>
       </div>
     </section>
     <section id="restaurant">
-      <h3>Restaurants</h3>
+      <h3 class="title__section">Restaurants</h3>
       <div class="restaurant-liste">
         <article class="restaurant-unit">
           <a href="./MenuLaPalette.html">
             <figure class="restaurant-unit__photo">
-              <!-- Image de la carte -->
-              <p>Nouveau</p>
+              <p class="btn--new">Nouveau</p>
               <img
                 src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="la palette du gout"
               />
               <figcaption class="restaurant-titre">
-                <!-- Corp de notre carte -->
                 <div>
-                  <!-- Titre de l'article -->
-                  <h4>La palette du goût</h4>
-                  <p>Ménilmontant</p>
+                  <h4 class="restaurant--name">La palette du goût</h4>
+                  <p class="restaurant--location">Ménilmontant</p>
                 </div>
-                <i class="fa-solid fa-heart relatheart"
-                  ><span><i class="fa-solid fa-heart absheart"></i></span
-                ></i>
+                <i class="fa-solid fa-heart relatheart"></i>
               </figcaption>
             </figure>
           </a>
@@ -89,22 +88,17 @@
         <article class="restaurant-unit">
           <a href="./MenuLaNote.html">
             <figure class="restaurant-unit__photo">
-              <!-- Image de la carte -->
               <img
                 src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                 alt="La note enchantée"
               />
-              <p>Nouveau</p>
+              <p class="btn--new">Nouveau</p>
               <figcaption class="restaurant-titre">
-                <!-- Corp de notre carte -->
                 <div>
-                  <!-- Titre de l'article -->
-                  <h4>La note enchantée</h4>
-                  <p>Charonne</p>
+                  <h4 class="restaurant--name">La note enchantée</h4>
+                  <p class="restaurant--location">Charonne</p>
                 </div>
-                <i class="fa-solid fa-heart relatheart"
-                  ><span><i class="fa-solid fa-heart absheart"></i></span
-                ></i>
+                <i class="fa-solid fa-heart relatheart"></i>
               </figcaption>
             </figure>
           </a>
@@ -112,22 +106,17 @@
         <article class="restaurant-unit">
           <a href="./MenuALaFr.html">
             <figure class="restaurant-unit__photo">
-              <!-- Image de la carte -->
               <img
                 src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                 alt="A la française"
               />
-              <p>Nouveau</p>
+              <p class="btn--new">Nouveau</p>
               <figcaption class="restaurant-titre">
-                <!-- Corp de notre carte -->
                 <div>
-                  <!-- Titre de l'article -->
-                  <h4>A la française</h4>
-                  <p>Cité Rouge</p>
+                  <h4 class="restaurant--name">A la française</h4>
+                  <p class="restaurant--location">Cité Rouge</p>
                 </div>
-                <i class="fa-solid fa-heart relatheart"
-                  ><span><i class="fa-solid fa-heart absheart"></i></span
-                ></i>
+                <i class="fa-solid fa-heart relatheart"></i>
               </figcaption>
             </figure>
           </a>
@@ -135,48 +124,44 @@
         <article class="restaurant-unit">
           <a href="./MenuLeDelice.html">
             <figure class="restaurant-unit__photo">
-              <!-- Image de la carte -->
               <img
                 src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="Le délice des sens"
               />
-              <p>Nouveau</p>
+              <p class="btn--new">Nouveau</p>
               <figcaption class="restaurant-titre">
-                <!-- Corp de notre carte -->
                 <div>
                   <!-- Titre de l'article -->
-                  <h4>Le délice des sens</h4>
-                  <p>Cité Rouge</p>
+                  <h4 class="restaurant--name">Le délice des sens</h4>
+                  <p class="restaurant--location">Cité Rouge</p>
                 </div>
-                <i class="fa-solid fa-heart relatheart"
-                  ><span><i class="fa-solid fa-heart absheart"></i></span
-                ></i>
+                <i class="fa-solid fa-heart relatheart"></i>
               </figcaption>
             </figure>
           </a>
         </article>
       </div>
     </section>
+    <footer>
+      <article>
+        <ul>
+          <li>
+            <h5>ohmyfood</h5>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-handshake-angle"></i>Devenir parteanire</a
+            >
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:pbarilepro@gmail.com">Contact</a></li>
+        </ul>
+      </article>
+    </footer>
   </body>
-  <footer>
-    <article>
-      <ul>
-        <li>
-          <h5>ohmyfood</h5>
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-solid fa-handshake-angle"></i>Devenir parteanire</a
-          >
-        </li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="mailto:pbarilepro@gmail.com">Contact</a></li>
-      </ul>
-    </article>
-  </footer>
 </html>

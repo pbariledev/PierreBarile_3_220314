@@ -1,3 +1,5 @@
+$fontfamily: 'Roboto', sans-serif, sans-serif;
+
 //breack point
 $bpMobil: 768px;
 //color
@@ -23,3 +25,7 @@ $w-buttonLocation: 20em;
 $h-buttonLocation: 3em;
 $w-buttonLocationMobil: 100%;
 $h-buttonLocationMobil: 3em;
+
+// animation
+$anim-item: 1000ms;
+$anim-delay: $anim-item / 3;
