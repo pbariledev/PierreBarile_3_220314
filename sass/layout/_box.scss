@@ -35,16 +35,17 @@
     darken($color: $colorBackgroundLocation, $amount: 10%);
   cursor: pointer;
   width: 100%;
-  max-width: 100%;
   overflow: hidden;
   animation: item $anim-item backwards;
-  @for $i from 1 through 3 {
+  @for $i from 1 through 4 {
     &--#{$i} {
       animation-delay: $anim-delay * $i;
     }
-  }
-  &:hover .item--container {
-    transform: translate(0em);
+    &:hover .item--container{
+      margin-right: 0em;
+      transition: 2s;
+    }
+  
   }
 
   .item {
@@ -55,6 +56,7 @@
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
+      width: 90%;
 
       &__master {
         margin: 0;
@@ -73,18 +75,15 @@
       display: flex;
       justify-content: space-between;
       height: 3em;
-      width: 5em;
-      margin-left: 1em;
-      transform: translate(3.5em);
-      transition-property: transform;
-      transition-duration: 1000ms;
+      margin-right: -4em;
     }
     &--price {
       width: 3.5em;
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
-      padding-right: 2.5em;
+      padding: 0 2.5em 0 2em;
+
       dl {
         margin: 0;
       }
@@ -117,7 +116,7 @@ input:checked + label .item {
   &--btn {
     color: $color-tertiary;
   }
-  &--container {
-    transform: translate(0em);
+  &--container{
+    margin-right: 0;
   }
 }

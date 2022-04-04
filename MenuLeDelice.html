@@ -8,8 +8,6 @@
     <link rel="icon" href="./images/logo/ohmyfood@2x.svg" />
     <!-- lien vers les feuilles de styles-->
     <!--lien vers la police externe (mettre url)-->
-    <link rel="stylesheet" href="https://*" />
-    <!--lien vers la feuille de style-->
     <link rel="stylesheet" href="./public/css/styles.css" />
     <!--lien vers la feuille de icone-->
     <script
@@ -27,6 +25,218 @@
         <img src="./images/logo/ohmyfood.png" alt="logo Ohmyfood" />
       </div>
     </header>
+    <img
+    class="imagePage"
+    src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+    alt="Le délice des sens"
+  />
+    <main class="menu">
+      <section class="menu--header">
+        <h1 class="menu--header__title">Le délice des sens</h1>
+        <i class="fa-solid fa-heart relatheart"></i>
+      </section>
+      <section class="submenus">
+        <div class="submenus__container">
+          <ul class="submenus--plate"><!--entrée-->
+            <h2  class="submenus--plate__title">entrées</h2>
+            <hr />
+            
+            <li class="item item--1">
+                <div class="item--title">
+                  <p class="item--title__master">Tartare de thon</p>
+                  <p class="item--title__minor">Assaisonné au yuzu</p>
+                </div>
+                <input id="item1" name="item1" class="checkbox" type="checkbox" />
+                <label for="item1" class="item--check">
+                  <div class="item--container">
+                    <div class="item--price">
+                      <dl>
+                        <dt>prix</dt>
+                        <dd>25€</dd>
+                      </dl>
+                    </div>
+                    <div class="item--icon">
+                          <i class="fa-solid fa-check item--btn"></i>
+                    </div>
+                  </div>
+                </label>
+            </li>
+            <li class="item item--2">
+              <div class="item--title">
+                <p class="item--title__master">Bouchée de homard croustillant</p>
+                <p class="item--title__minor">Et sa farandole de petits légumes</p>
+              </div>
+              <input id="item2" name="item2" class="checkbox" type="checkbox" />
+              <label for="item2" class="item--check">
+                <div class="item--container">
+                  <div class="item--price">
+                    <dl>
+                      <dt>prix</dt>
+                      <dd>35€</dd>
+                    </dl>
+                  </div>
+                <div class="item--icon">
+                        <i class="fa-solid fa-check item--btn"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="item item--3">
+              <div class="item--title">
+                <p class="item--title__master">Velouté de cèpes</p>
+                <p class="item--title__minor">Aux truffes</p>
+              </div>
+              <input id="item3" name="item1" class="checkbox" type="checkbox" />
+              <label for="item3" class="item--check">
+                <div class="item--container">
+                  <div class="item--price">
+                    <dl>
+                      <dt>prix</dt>
+                      <dd>20€</dd>
+                    </dl>
+                  </div>
+                  <div class="item--icon">
+                        <i class="fa-solid fa-check item--btn"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+          </ul>
+          <ul class="submenus--plate"><!--plats-->
+            <h6 class="submenus--plate__title">plats</h6>
+            <hr />
+            <li class="item item--1">
+              <div class="item--title">
+                <p class="item--title__master">Poulet rôti aux herbes de Provence</p>
+                <p class="item--title__minor">Et sa crème de truffe</p>
+              </div>
+              <input id="item4" name="item1" class="checkbox" type="checkbox" />
+              <label for="item4" class="item--check">
+                <div class="item--container">
+                  <div class="item--price">
+                    <dl>
+                      <dt>prix</dt>
+                      <dd>40€</dd>
+                    </dl>
+                  </div>
+                  <div class="item--icon">
+                        <i class="fa-solid fa-check item--btn"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="item item--2">
+              <div class="item--title">
+                <p class="item--title__master">Langouste rôtie</p>
+                <p class="item--title__minor">Et ses légumes de saison</p>
+              </div>
+              <input id="item5" name="item2" class="checkbox" type="checkbox" />
+              <label for="item5" class="item--check">
+                <div class="item--container">
+                  <div class="item--price">
+                    <dl>
+                      <dt>prix</dt>
+                      <dd>35€</dd>
+                    </dl>
+                  </div>
+                  <div class="item--icon">
+                        <i class="fa-solid fa-check item--btn"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="item item--3">
+              <div class="item--title">
+                <p class="item--title__master">Côte de boeuf Angus</p>
+                <p class="item--title__minor">Et sa purée de panais</p>
+              </div>
+              <input id="item6" name="item1" class="checkbox" type="checkbox" />
+              <label for="item6" class="item--check">
+                <div class="item--container">
+                  <div class="item--price">
+                    <dl>
+                      <dt>prix</dt>
+                      <dd>44€</dd>
+                    </dl>
+                  </div>
+                  <div class="item--icon">
+                        <i class="fa-solid fa-check item--btn"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <ul class="submenus--plate desserts"><!--desserts-->
+          <h6 class="submenus--plate__title">desserts</h6>
+          <hr />
+            <li class="item item--1">
+              <div class="item--title">
+                <p class="item--title__master">Farandole de desserts</p>
+                <p class="item--title__minor">Du chef</p>
+              </div>
+              <input id="item7" name="item1" class="checkbox" type="checkbox" />
+              <label for="item7" class="item--check">
+                <div class="item--container">
+                  <div class="item--price">
+                    <dl>
+                      <dt>prix</dt>
+                      <dd>18€</dd>
+                    </dl>
+                  </div>
+                  <div class="item--icon">
+                        <i class="fa-solid fa-check item--btn"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="item item--2">
+              <div class="item--title">
+                <p class="item--title__master">Crème brulée</p>
+                <p class="item--title__minor">Revisitée</p>
+              </div>
+              <input id="item8" name="item2" class="checkbox" type="checkbox" />
+              <label for="item8" class="item--check">
+                <div class="item--container">
+                  <div class="item--price">
+                    <dl>
+                      <dt>prix</dt>
+                      <dd>22€</dd>
+                    </dl>
+                  </div>
+                  <div class="item--icon">
+                        <i class="fa-solid fa-check item--btn"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="item item--3">
+              <div class="item--title">
+                <p class="item--title__master">Tiramisu</p>
+                <p class="item--title__minor">À la noisette</p>
+              </div>
+              <input id="item9" name="item1" class="checkbox" type="checkbox" />
+              <label for="item9" class="item--check">
+                <div class="item--container">
+                  <div class="item--price">
+                    <dl>
+                      <dt>prix</dt>
+                      <dd>23€</dd>
+                    </dl>
+                  </div>
+                  <div class="item--icon">
+                        <i class="fa-solid fa-check item--btn"></i>
+                  </div>
+                </div>
+              </label>
+            </li>
+        </ul>
+      </section>
+      <section class="validemenu">
+        <button class="validation">commander</button>
+      </section>
+    </main>
+  </section>
     <footer>
       <article>
         <ul>
