@@ -437,28 +437,48 @@ li > a {
 }
 .item:hover .item--container {
   margin-right: 0em;
-  transition: 2s;
+}
+.item:hover .item--btn {
+  transform: rotate(0deg);
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+  animation-direction: reverse;
 }
 .item--2 {
   animation-delay: 666.6666666667ms;
 }
 .item:hover .item--container {
   margin-right: 0em;
-  transition: 2s;
+}
+.item:hover .item--btn {
+  transform: rotate(0deg);
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+  animation-direction: reverse;
 }
 .item--3 {
   animation-delay: 1000ms;
 }
 .item:hover .item--container {
   margin-right: 0em;
-  transition: 2s;
+}
+.item:hover .item--btn {
+  transform: rotate(0deg);
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+  animation-direction: reverse;
 }
 .item--4 {
   animation-delay: 1333.3333333333ms;
 }
 .item:hover .item--container {
   margin-right: 0em;
-  transition: 2s;
+}
+.item:hover .item--btn {
+  transform: rotate(0deg);
+  transition-duration: 0.8s;
+  transition-timing-function: linear;
+  animation-direction: reverse;
 }
 .item .item--title {
   display: flex;
@@ -486,6 +506,7 @@ li > a {
   justify-content: space-between;
   height: 3em;
   margin-right: -4em;
+  transition: 1s;
 }
 .item .item--price {
   width: 3.5em;
@@ -510,7 +531,7 @@ li > a {
   justify-content: center;
 }
 .item .item--btn {
-  color: white;
+  color: #99e2d0;
   height: 1.5em;
   width: 1.5em;
   border-radius: 1em;
@@ -518,13 +539,11 @@ li > a {
   text-align: center;
   padding-top: 0.25em;
   cursor: pointer;
+  transform: rotate(360deg);
 }
 
 input:checked + label .item--btn {
   color: #99e2d0;
-}
-input:checked + label .item--container {
-  margin-right: 0;
 }
 
 header {
@@ -585,7 +604,7 @@ footer .fa-solid {
 }
 
 @media (min-width: 768px) {
-  article ul {
+  .footer--ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

@@ -41,10 +41,18 @@
     &--#{$i} {
       animation-delay: $anim-delay * $i;
     }
-    &:hover .item--container{
+    &:hover .item{
+      &--container{
       margin-right: 0em;
-      transition: 2s;
-    }
+      }
+      &--btn{
+        transform: rotate(0deg);
+        transition-duration: .8s;
+        transition-timing-function: linear;
+        animation-direction: reverse;
+      }
+
+  }
   
   }
 
@@ -76,6 +84,8 @@
       justify-content: space-between;
       height: 3em;
       margin-right: -4em;
+      transition: 1s;
+
     }
     &--price {
       width: 3.5em;
@@ -101,7 +111,7 @@
       justify-content: center;
     }
     &--btn {
-      color: white;
+      color: $color-tertiary;
       height: 1.5em;
       width: 1.5em;
       border-radius: 1em;
@@ -109,14 +119,13 @@
       text-align: center;
       padding-top: 0.25em;
       cursor: pointer;
+      transform: rotate(360deg);
+
     }
   }
 }
 input:checked + label .item {
   &--btn {
     color: $color-tertiary;
-  }
-  &--container{
-    margin-right: 0;
   }
 }

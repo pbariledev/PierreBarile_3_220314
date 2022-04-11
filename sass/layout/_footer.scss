@@ -31,7 +31,7 @@ footer {
     margin-right: 0.5em;
   }
 }
-article ul {
+.footer--ul {
   @media (min-width: $bpMobil) {
     display: flex;
     flex-wrap: wrap;
