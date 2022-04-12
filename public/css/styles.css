@@ -256,6 +256,11 @@ section div > button {
   animation: hover 1s;
 }
 
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
 #under_header .title__slogan {
   margin: 0px;
   text-align: center;
@@ -697,7 +702,7 @@ input {
 #fonctionnement button:hover i {
   color: #9356dc;
 }
-#fonctionnement button h4 {
+#fonctionnement button .num__btn__fct {
   color: white;
   background-color: #9356dc;
   width: 2em;
